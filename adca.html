@@ -4,56 +4,105 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ADCA - National Bright Computer Institute</title>
-<link rel="stylesheet" href="./style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* Inline CSS */
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
+body{background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);color:white;}
+header{display:flex;align-items:center;padding:15px 8%;background:rgba(255,255,255,0.05);backdrop-filter:blur(10px);position:sticky;top:0;z-index:1000;}
+.logo{display:flex;align-items:center;gap:10px;font-size:20px;font-weight:700;color:#00f2ff;}
+.logo img{height:40px;}
+.hero{text-align:center;padding:70px 20px;}
+.hero h1{font-size:32px;margin-bottom:10px;}
+.section{padding:60px 8%;}
+.section h2{text-align:center;margin-bottom:40px;}
+.fade-in{opacity:0;transform:translateY(50px);transition:all 0.8s ease;}
+.fade-in.active{opacity:1;transform:translateY(0);}
+.table-container{overflow-x:auto;margin-top:20px;}
+.course-table{width:100%;border-collapse:collapse;background:rgba(255,255,255,0.08);border-radius:15px;overflow:hidden;}
+.course-table th,.course-table td{padding:15px 12px;text-align:center;border-bottom:1px solid rgba(255,255,255,0.2);color:white;font-size:14px;}
+.course-table th{background:rgba(0,255,255,0.2);font-weight:600;}
+.course-table tr:hover{background:rgba(0,255,255,0.1);}
+.footer-link{color:#00f7ff;text-decoration:none;font-weight:600;transition:0.3s;}
+.footer-link:hover{color:#fff;text-shadow:0 0 8px #00f7ff;}
+.whatsapp-float{position:fixed;bottom:20px;right:20px;width:60px;height:60px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 5px 20px rgba(0,0,0,0.4);z-index:1000;transition:.3s;}
+.whatsapp-float img{width:35px;}
+.whatsapp-float:hover{transform:scale(1.1);}
+@media(max-width:768px){.section{padding:40px 6%;}.hero h1{font-size:22px;}.course-table th,.course-table td{padding:10px 8px;font-size:13px;}}
+</style>
 </head>
+
 <body>
 
 <header>
-<div class="logo">
-<img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png">
-<span>National Bright Computer Institute</span>
-</div>
+  <div class="logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Logo">
+    <span>National Bright Computer Institute</span>
+  </div>
 </header>
 
 <section class="hero fade-in">
-<h1>ADCA Course Details 💻</h1>
-<p>Professional Computer Training Institute</p>
+  <h1>ADCA Course Details 💻</h1>
+  <p>Professional Computer Training Institute</p>
 </section>
 
 <section class="section fade-in">
-<h2>Course Details</h2>
-<div class="table-container">
-<table class="course-table">
-<thead>
-<tr><th>Module</th><th>Duration</th><th>Fee</th><th>Mode</th></tr>
-</thead>
-<tbody>
-<tr><td>MS Office</td><td>1 Month</td><td>₹3,000</td><td>Offline</td></tr>
-<tr><td>Internet & Email</td><td>1 Month</td><td>₹2,500</td><td>Offline</td></tr>
-<tr><td>Tally with GST</td><td>1 Month</td><td>₹3,500</td><td>Offline</td></tr>
-<tr><td>Computer Fundamentals</td><td>1 Month</td><td>₹3,000</td><td>Offline</td></tr>
-</tbody>
-</table>
-</div>
+  <h2>Course Overview</h2>
+  <p style="text-align:center;">
+    The ADCA (Advanced Diploma in Computer Applications) course is designed to give students complete knowledge of computer applications and practical skills needed for office and professional work.
+  </p>
 </section>
 
 <section class="section fade-in">
-<h2>Contact for Enrollment</h2>
-<p style="text-align:center;">
-<a href="https://wa.me/919635160191" target="_blank" class="footer-link">💬 Contact Us on WhatsApp</a>
-</p>
+  <h2>Course Modules</h2>
+  <div class="table-container">
+    <table class="course-table">
+      <thead>
+        <tr>
+          <th>Module</th>
+          <th>Duration</th>
+          <th>Fee</th>
+          <th>Mode</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>MS Office</td><td>1 Month</td><td>₹3,000</td><td>Offline</td></tr>
+        <tr><td>Internet & Email</td><td>1 Month</td><td>₹2,500</td><td>Offline</td></tr>
+        <tr><td>Tally with GST</td><td>1 Month</td><td>₹3,500</td><td>Offline</td></tr>
+        <tr><td>Computer Fundamentals</td><td>1 Month</td><td>₹3,000</td><td>Offline</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="section fade-in">
+  <h2>Contact for Enrollment</h2>
+  <p style="text-align:center;">
+    <a href="https://wa.me/919635160191" target="_blank" class="footer-link">💬 Contact Us on WhatsApp</a>
+  </p>
 </section>
 
 <footer>
-<p>📞 <a href="tel:+919635160191" class="footer-link">+91 9635160191</a></p>
-<p>© 2026 National Bright Computer Institute</p>
+  <p>📞 <a href="tel:+919635160191" class="footer-link">+91 9635160191</a></p>
+  <p>© 2026 National Bright Computer Institute</p>
 </footer>
 
 <a href="https://wa.me/919635160191" class="whatsapp-float" target="_blank">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
 </a>
 
-<script src="./script.js"></script>
+<script>
+/* Inline JS for scroll animation */
+const faders = document.querySelectorAll('.fade-in');
+const appearOnScroll = new IntersectionObserver(function(entries,observer){
+  entries.forEach(entry=>{
+    if(!entry.isIntersecting) return;
+    entry.target.classList.add("active");
+    observer.unobserve(entry.target);
+  });
+},{threshold:0.2});
+faders.forEach(fader=>{appearOnScroll.observe(fader);});
+</script>
+
 </body>
 </html>
